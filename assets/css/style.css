@@ -6,3 +6,16 @@ bottom : 50px;
 right: -100px;
 opacity: 1;
 }
+
+/*Screen between 0 and 1300px : hide the navbar and my CV_PDF_Desktop*/
+@media screen and (max-width: 1300px) {
+  #menu {
+    display: none;
+  }
+}
+
+/*Screen between 1300 and infinite : hide my CV_PDF for the responsive version*/
+@media screen and (min-width: 1300px) {
+  .navbar-brand {
+    display: none;
+}
