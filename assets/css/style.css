@@ -7,15 +7,33 @@ right: -100px;
 opacity: 1;
 }
 
-/*Screen between 0 and 1300px : hide the navbar and my CV_PDF_Desktop*/
+/*----------------NAVBAR----------------*/
+/*Screen starting 0 and towards 1300px : hide the navbar and my CV_PDF_Desktop*/
 @media screen and (max-width: 1300px) {
   #menu {
     display: none;
   }
 }
 
-/*Screen between 1300 and infinite : hide my CV_PDF for the responsive version*/
-@media screen and (min-width: 1300px) {
+/*Screen starting at 1300px and towards infinite : hide my CV_PDF for the responsive version*/
+@media screen and (min-width: 1301px) {
   .navbar-brand {
     display: none;
+  }
 }
+
+/*----------------BANNER----------------*/
+/*Screen starting 0 and towards 750px : hide the banner*/
+@media screen and (max-width: 750px) {
+  #banner_desktop {
+    display: none;
+  }
+}
+
+/*Screen starting 0 and towards 751px : hide the banner*/
+@media screen and (min-width: 751px) {
+  #banner_mobile {
+    display: none;
+  }
+}
+
