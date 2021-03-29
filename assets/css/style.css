@@ -8,14 +8,14 @@ opacity: 1;
 }
 
 /*----------------NAVBAR----------------*/
-/*Screen starting 0 and towards 1300px : hide the navbar and my CV_PDF_Desktop*/
+/*Screens starting 0 and towards 1300px : hide the navbar and my CV_PDF_Desktop*/
 @media screen and (max-width: 1300px) {
   #menu {
     display: none;
   }
 }
 
-/*Screen starting at 1300px and towards infinite : hide my CV_PDF for the responsive version*/
+/*Screens starting at 1300px and towards infinite : hide my CV_PDF for the responsive version*/
 @media screen and (min-width: 1301px) {
   .navbar-brand {
     display: none;
@@ -23,17 +23,32 @@ opacity: 1;
 }
 
 /*----------------BANNER----------------*/
-/*Screen starting 0 and towards 750px : hide the banner*/
+/*Screens starting 0 and towards 750px : hide the banner*/
 @media screen and (max-width: 750px) {
   #banner_desktop {
     display: none;
   }
 }
 
-/*Screen starting 0 and towards 751px : hide the banner*/
+/*Screens starting 751px and towards infinite : hide the banner*/
 @media screen and (min-width: 751px) {
   #banner_mobile {
     display: none;
   }
 }
 
+/*----------------SKILLS----------------*/
+/*Screens starting 1201px and towards infinite : hide the vertical_skills*/
+@media screen and (min-width: 1201px) {
+  #vertical_skills {
+    display: none;
+  }
+}
+
+/*----------------SKILLS----------------*/
+/*Screens starting 0 and towards 1200px : hide the vertical_skills*/
+@media screen and (max-width: 1200px) {
+  #horizontal_skills {
+    display: none;
+  }
+}
